@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portafolio | Daniel Sierra</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#121212;--ink:#F5F1EA;--card:#1E1E1E;--red:#E63946;--line:2px solid var(--ink);color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px);scroll-behavior:smooth;background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Space Grotesk",system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--card);z-index:10}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+h1,h2,h3{font-family:"Archivo Black","Arial Black",sans-serif;font-weight:400;line-height:1.05;margin:0}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--card);border-bottom:var(--line);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px 20px;padding:12px 20px}
+header .logo{font-family:"Archivo Black",sans-serif;color:var(--red);font-size:22px;text-decoration:none}
+nav{display:flex;gap:18px;flex-wrap:wrap;font-size:15px}
+nav a{text-decoration:none}
+nav a:hover{color:var(--red)}
+main{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:64px 0 8px}
+h2{font-size:clamp(28px,5vw,44px);margin-bottom:28px}
+.hero{display:grid;grid-template-columns:1.6fr 1fr;gap:32px;align-items:center;padding-top:56px}
+.hero h1{font-size:clamp(44px,10vw,92px)}
+.hero p{max-width:46ch;margin:20px 0 28px;font-size:19px}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;font:700 18px "Space Grotesk",sans-serif;padding:12px 22px;border:var(--line);text-decoration:none;box-shadow:4px 4px 0 var(--ink);transition:transform .12s,box-shadow .12s}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
+.btn.red{background:var(--red);color:#121212}
+.btn.out{background:var(--bg);color:var(--ink)}
+.foto{aspect-ratio:1;background:var(--red);color:#121212;border:var(--line);box-shadow:8px 8px 0 var(--ink);display:flex;align-items:center;justify-content:center;font:400 28px "Archivo Black",sans-serif;text-align:center;padding:16px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.about p{margin:0 0 14px}
+.tags{display:flex;flex-wrap:wrap;gap:10px;align-content:flex-start;list-style:none;margin:0;padding:0}
+.tags li{border:var(--line);background:var(--card);padding:6px 14px;font-weight:500}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:24px}
+.card{background:var(--card);border:var(--line);box-shadow:6px 6px 0 var(--red);padding:22px}
+.card h3{font-size:22px;margin-bottom:10px}
+.card p{margin:0}
+.proj{padding:0;overflow:hidden}
+.proj .img{height:140px;border-bottom:var(--line);background:var(--bg);display:flex;align-items:center;justify-content:center;color:var(--red);font:400 18px "Archivo Black",sans-serif}
+.proj .body{padding:20px 22px 22px}
+.proj dl{margin:12px 0 0;font-size:15px}
+.proj dt{font-weight:700;color:var(--red);margin-top:8px}
+.proj dd{margin:0}
+.quote{font-size:20px;margin:0 0 14px}
+.who{font-size:15px;font-weight:700;margin:0}
+.contact{border:var(--line);background:var(--red);color:#121212;box-shadow:8px 8px 0 var(--ink);padding:32px;margin-bottom:56px}
+.contact h2{margin-bottom:12px}
+.contact p{margin:0 0 22px;max-width:50ch;font-size:19px}
+.contact .btn{box-shadow:4px 4px 0 #121212;border-color:#121212;background:#121212;color:var(--ink)}
+.contact .btn:hover{box-shadow:2px 2px 0 #121212}
+footer{border-top:var(--line);background:var(--card);text-align:center;font-size:14px;padding:18px 20px}
+@media(max-width:720px){.hero,.about{grid-template-columns:1fr}.foto{max-width:260px}section{padding-top:48px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<header>
+<a class="logo" href="#inicio">DS</a>
+<nav aria-label="Principal">
+<a href="#sobre-mi">Sobre mí</a>
+<a href="#servicios">Servicios</a>
+<a href="#proyectos">Proyectos</a>
+<a href="#testimonios">Testimonios</a>
+<a href="#contacto">Contacto</a>
+</nav>
+</header>
+<main>
+<section id="inicio" class="hero">
+<div>
+<h1>DANIEL SIERRA</h1>
+<p>Programador en Java, Python, JavaScript y HTML. Me gusta construir soluciones en equipo y seguir aprendiendo en cada proyecto.</p>
+<div class="btns">
+<a class="btn red" href="#servicios">Ver servicios</a>
+<a class="btn out" href="#contacto">Escríbeme</a>
+</div>
+</div>
+<div class="foto" role="img" aria-label="Espacio para tu foto">Tu foto aquí</div>
+</section>
+
+<section id="sobre-mi">
+<h2>Sobre mí</h2>
+<div class="about">
+<div>
+<p>Soy Daniel José Sierra Ricaurte, programador. Trabajo con Java, Python, JavaScript y HTML, y siempre quiero aprender más. Me adapto con facilidad a cualquier entorno, sobre todo a los de programación.</p>
+<p>Prefiero trabajar en equipo porque creo que así se logran mejores resultados. Soy responsable, proactivo y creativo.</p>
+</div>
+<ul class="tags" aria-label="Habilidades">
+<li>Java</li>
+<li>Python</li>
+<li>JavaScript</li>
+<li>HTML</li>
+<li>Trabajo en equipo</li>
+<li>Responsable</li>
+<li>Proactivo</li>
+<li>Creativo</li>
+</ul>
+</div>
+</section>
+
+<section id="servicios">
+<h2>Servicios</h2>
+<div class="grid">
+<article class="card"><h3>Desarrollo web</h3><p>Páginas y sitios con HTML y JavaScript, pensados para que se vean bien y funcionen sin problemas.</p></article>
+<article class="card"><h3>Programas en Java</h3><p>Aplicaciones y ejercicios en Java con código ordenado y fácil de mantener.</p></article>
+<article class="card"><h3>Scripts en Python</h3><p>Programas y automatizaciones en Python para resolver tareas repetitivas.</p></article>
+<article class="card"><h3>Apoyo en proyectos de software</h3><p>Me integro a tu equipo, comunico avances y aporto ideas para sacar el proyecto adelante.</p></article>
+</div>
+</section>
+
+<section id="proyectos">
+<h2>Proyectos destacados</h2>
+<div class="grid">
+<article class="card proj">
+<div class="img">Imagen del proyecto</div>
+<div class="body"><h3>Nombre del proyecto 1</h3>
+<dl><dt>Contexto</dt><dd>Para quién o para qué lo hiciste.</dd><dt>Mi rol</dt><dd>Diseñé, implementé o coordiné.</dd><dt>Resultado</dt><dd>Lo que lograste.</dd></dl></div>
+</article>
+<article class="card proj">
+<div class="img">Imagen del proyecto</div>
+<div class="body"><h3>Nombre del proyecto 2</h3>
+<dl><dt>Contexto</dt><dd>Para quién o para qué lo hiciste.</dd><dt>Mi rol</dt><dd>Diseñé, implementé o coordiné.</dd><dt>Resultado</dt><dd>Lo que lograste.</dd></dl></div>
+</article>
+<article class="card proj">
+<div class="img">Imagen del proyecto</div>
+<div class="body"><h3>Nombre del proyecto 3</h3>
+<dl><dt>Contexto</dt><dd>Para quién o para qué lo hiciste.</dd><dt>Mi rol</dt><dd>Diseñé, implementé o coordiné.</dd><dt>Resultado</dt><dd>Lo que lograste.</dd></dl></div>
+</article>
+</div>
+</section>
+
+<section id="testimonios">
+<h2>Lo que dicen de mi trabajo</h2>
+<div class="grid">
+<figure class="card" style="margin:0"><blockquote class="quote" style="margin:0 0 14px">Escribe aquí un testimonio real de un cliente, compañero o profesor.</blockquote><figcaption class="who">Nombre y cargo</figcaption></figure>
+<figure class="card" style="margin:0"><blockquote class="quote" style="margin:0 0 14px">Escribe aquí otro testimonio que muestre cómo trabajas y qué resultados logras.</blockquote><figcaption class="who">Nombre y cargo</figcaption></figure>
+</div>
+</section>
+
+<section id="contacto">
+<div class="contact">
+<h2>Trabajemos juntos</h2>
+<p>Cuéntame qué necesitas y te respondo lo antes posible.</p>
+<div class="btns">
+<a class="btn" href="https://wa.me/57TUNUMERO">WhatsApp</a>
+<a class="btn" href="mailto:tucorreo@ejemplo.com">Correo</a>
+<a class="btn" href="https://instagram.com/tuusuario">Instagram</a>
+<a class="btn" href="https://linkedin.com/in/tuusuario">LinkedIn</a>
+</div>
+</div>
+</section>
+</main>
+<footer>Daniel José Sierra Ricaurte. Portafolio de servicios.</footer>
+</body>
+</html>
