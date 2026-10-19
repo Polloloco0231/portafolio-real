@@ -47,6 +47,8 @@ h2{font-size:clamp(28px,5vw,44px);margin-bottom:28px}
 .proj dl{margin:12px 0 0;font-size:15px}
 .proj dt{font-weight:700;color:var(--red);margin-top:8px}
 .proj dd{margin:0}
+.ver{display:inline-block;margin-top:16px;font-weight:700;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--red)}
+.ver:hover{color:var(--red)}
 .quote{font-size:20px;margin:0 0 14px}
 .who{font-size:15px;font-weight:700;margin:0}
 .contact{border:var(--line);background:var(--red);color:#121212;box-shadow:8px 8px 0 var(--ink);padding:32px;margin-bottom:56px}
@@ -66,7 +68,6 @@ footer{border-top:var(--line);background:var(--card);text-align:center;font-size
 <a href="#sobre-mi">Sobre mí</a>
 <a href="#servicios">Servicios</a>
 <a href="#proyectos">Proyectos</a>
-<a href="#testimonios">Testimonios</a>
 <a href="#contacto">Contacto</a>
 </nav>
 </header>
@@ -95,6 +96,7 @@ footer{border-top:var(--line);background:var(--card);text-align:center;font-size
 <li>Python</li>
 <li>JavaScript</li>
 <li>HTML</li>
+<li>SQL</li>
 <li>Trabajo en equipo</li>
 <li>Responsable</li>
 <li>Proactivo</li>
@@ -117,28 +119,28 @@ footer{border-top:var(--line);background:var(--card);text-align:center;font-size
 <h2>Proyectos destacados</h2>
 <div class="grid">
 <article class="card proj">
-<div class="img">Imagen del proyecto</div>
-<div class="body"><h3>Nombre del proyecto 1</h3>
-<dl><dt>Contexto</dt><dd>Para quién o para qué lo hiciste.</dd><dt>Mi rol</dt><dd>Diseñé, implementé o coordiné.</dd><dt>Resultado</dt><dd>Lo que lograste.</dd></dl></div>
+<div class="img">HTML · CSS · JavaScript</div>
+<div class="body"><h3>Roomify: Hotel El Rincón del Carmen</h3>
+<dl><dt>Contexto</dt><dd>Trabajo de la materia de JavaScript: un sitio web completo para un hotel, con reservas, inicio de sesión con roles de cliente y administrador, panel de administración y página de contacto.</dd><dt>Mi rol</dt><dd>Trabajé en pareja con Git y GitHub. Me encargué de toda la parte de HTML y de algunas funciones en JavaScript.</dd><dt>Resultado</dt><dd>Un sitio funcional que valida la disponibilidad y evita que se crucen las fechas de reserva, con componentes web reutilizables y datos guardados en LocalStorage.</dd></dl>
+<a class="ver" href="https://github.com/Polloloco0231/roomify">Ver en GitHub →</a></div>
 </article>
 <article class="card proj">
-<div class="img">Imagen del proyecto</div>
-<div class="body"><h3>Nombre del proyecto 2</h3>
-<dl><dt>Contexto</dt><dd>Para quién o para qué lo hiciste.</dd><dt>Mi rol</dt><dd>Diseñé, implementé o coordiné.</dd><dt>Resultado</dt><dd>Lo que lograste.</dd></dl></div>
+<div class="img">HTML · CSS</div>
+<div class="body"><h3>CampusShop</h3>
+<dl><dt>Contexto</dt><dd>Proyecto académico: la interfaz de una tienda en línea universitaria hecha solo con HTML y CSS, sin JavaScript.</dd><dt>Mi rol</dt><dd>Maqueté todas las vistas con HTML semántico y CSS modular, pensando primero en el celular.</dd><dt>Resultado</dt><dd>Una tienda con catálogo, páginas de producto, carrito, pago, perfil e historial de pedidos que se adapta a celular y computador.</dd></dl>
+<a class="ver" href="https://github.com/Polloloco0231/Campus-shop">Ver en GitHub →</a></div>
 </article>
 <article class="card proj">
-<div class="img">Imagen del proyecto</div>
-<div class="body"><h3>Nombre del proyecto 3</h3>
-<dl><dt>Contexto</dt><dd>Para quién o para qué lo hiciste.</dd><dt>Mi rol</dt><dd>Diseñé, implementé o coordiné.</dd><dt>Resultado</dt><dd>Lo que lograste.</dd></dl></div>
+<div class="img">Java · MySQL · JDBC</div>
+<div class="body"><h3>CrediYa: gestión de préstamos</h3>
+<dl><dt>Contexto</dt><dd>Sistema de consola para digitalizar los préstamos de CrediYa S.A.S., una empresa que llevaba su información en hojas de cálculo.</dd><dt>Mi rol</dt><dd>Diseñé y desarrollé el sistema completo, con patrón MVC, DAO y principios SOLID.</dd><dt>Resultado</dt><dd>Gestiona empleados, clientes, préstamos y pagos, calcula cuotas y saldos, y genera reportes de cartera. Guarda los datos en MySQL y en archivos de texto.</dd></dl>
+<a class="ver" href="https://github.com/Polloloco0231/Proyecto-Crediya">Ver en GitHub →</a></div>
 </article>
-</div>
-</section>
-
-<section id="testimonios">
-<h2>Lo que dicen de mi trabajo</h2>
-<div class="grid">
-<figure class="card" style="margin:0"><blockquote class="quote" style="margin:0 0 14px">Escribe aquí un testimonio real de un cliente, compañero o profesor.</blockquote><figcaption class="who">Nombre y cargo</figcaption></figure>
-<figure class="card" style="margin:0"><blockquote class="quote" style="margin:0 0 14px">Escribe aquí otro testimonio que muestre cómo trabajas y qué resultados logras.</blockquote><figcaption class="who">Nombre y cargo</figcaption></figure>
+<article class="card proj">
+<div class="img">SQL · MySQL</div>
+<div class="body"><h3>Eventos Premier: sistema de reservas</h3>
+<dl><dt>Contexto</dt><dd>Base de datos para digitalizar las reservas de Eventos Premier S.A.S., una empresa que alquila salones para reuniones, fiestas y conferencias.</dd><dt>Mi rol</dt><dd>Diseñé la base de datos completa en MySQL 8: tablas, funciones, triggers y vistas.</dd><dt>Resultado</dt><dd>Controla la disponibilidad de los salones, calcula el total de cada reserva con IVA del 19%, cambia el estado del salón automáticamente y registra los cambios de precio en una auditoría.</dd></dl></div>
+</article>
 </div>
 </section>
 
@@ -147,10 +149,10 @@ footer{border-top:var(--line);background:var(--card);text-align:center;font-size
 <h2>Trabajemos juntos</h2>
 <p>Cuéntame qué necesitas y te respondo lo antes posible.</p>
 <div class="btns">
-<a class="btn" href="https://wa.me/57TUNUMERO">WhatsApp</a>
-<a class="btn" href="mailto:tucorreo@ejemplo.com">Correo</a>
-<a class="btn" href="https://instagram.com/tuusuario">Instagram</a>
-<a class="btn" href="https://linkedin.com/in/tuusuario">LinkedIn</a>
+<a class="btn" href="https://wa.me/573194428839">WhatsApp</a>
+<a class="btn" href="mailto:danielsierra0321@gmail.com">Correo</a>
+<a class="btn" href="https://github.com/Polloloco0231">GitHub</a>
+<a class="btn" href="https://www.linkedin.com/in/daniel-jos%C3%A9-sierra-ricaurte-152b38428/">LinkedIn</a>
 </div>
 </div>
 </section>
